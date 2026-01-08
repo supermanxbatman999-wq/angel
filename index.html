@@ -7,9 +7,8 @@
 <head>
 	<title>Happy Birthday</title>
 	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday Xola">
-	<meta name="robots" content="index, follow" />
-	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" /> 
+	<meta name="description" content="Happy Birthday angel">
+	<meta name="robots" content="index, follow" /> 
     <meta name="keywords" content="Birthday, Happy">
     <!-- Strat of Facebook Meta -->
     <meta property="og:type" content="E-Greeting" />
@@ -97,7 +96,7 @@
 			</div>
 		</div>
 		<div class="row message">
-			<div class="col-md-12">
+			<div class="col-md-12 message text">
 				<p>Today is...</p>
 				<p>a very special day</p>
 				<p>it is your birthday</p>
@@ -189,4 +188,14 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+$(document).ready(function(){
+  $(".message-text p").hide(); // hide all text initially
+  $(".message-text p").each(function(i){
+    $(this).delay(1500*i).fadeIn(1000); // show each <p> one by one
+  });
+});
+</script>
+
 </html>

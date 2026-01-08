@@ -1308,3 +1308,11 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+/* Mobile fix for balloons */
+@media (max-width: 768px) {
+  .balloons {
+    transform: scale(0.7);
+    left: 50%;
+    transform: translateX(-50%) scale(0.7);
+  }
+}

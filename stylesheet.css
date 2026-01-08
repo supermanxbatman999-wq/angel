@@ -1308,11 +1308,19 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
-/* Mobile fix for balloons */
+/* STRONG mobile fix for balloons */
 @media (max-width: 768px) {
   .balloons {
-    transform: scale(0.7);
-    left: 50%;
-    transform: translateX(-50%) scale(0.7);
+    position: relative !important;
+    margin: 10px auto;
+    display: inline-block;
+    transform: scale(0.65);
+  }
+
+  #b1, #b2, #b3, #b4, #b5 {
+    left: 0 !important;
+    right: 0 !important;
   }
 }
+
+
